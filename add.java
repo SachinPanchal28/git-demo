@@ -1,7 +1,19 @@
+
+
 public class add{
-    public static void main(String args[]){
-        int a,b;
-        System.out.print(a+b);
+    int a,b;
+    add(){
+        a=4;
+        b=6;
+    }
+
+    public int sum(){
+        return a+b;
+    }
+    
+   public static void main(String args[]){
+        add obj= new add();
+        System.out.println(obj.sum());
     }
 }
 
